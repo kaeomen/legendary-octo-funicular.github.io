@@ -1,23 +1,152 @@
-<div style="width: 1200px; height: 3270px; background-image: linear-gradient(180deg, rgba(255, 70.93, 70.93, 1), rgba(70.93, 255, 210.82, 1)); position: relative;">
-    <div style="width: 1060px; height: 369px; padding-top: 156px; padding-bottom: 156px; padding-left: 217px; padding-right: 76px; left: 0px; top: 0px; position: absolute; background-color: rgba(196, 196, 196, 1); display: inline-flex; flex-direction: row; align-items: center; justify-content: flex-end;">
-        <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
-            <p style="font-size: 48px; font-weight: 700; line-height: 100%; color: black;">Home</p>
-            <div style="width: 70px;"/>
-            <p style="font-size: 48px; font-weight: 700; line-height: 100%; color: black;">Features</p>
-            <div style="width: 70px;"/>
-            <p style="font-size: 48px; font-weight: 700; line-height: 100%; color: black;">Blog</p>
-            <div style="width: 70px;"/>
-            <p style="font-size: 48px; font-weight: 700; line-height: 100%; color: black;">About</p>
-        </div>
-    </div>
-    <div style="width: 1262px; height: 1386px; left: 0px; top: 819px; position: absolute; display: inline-flex; flex-direction: column; align-items: center; justify-content: flex-start;">
-        <p style="font-size: 150px; font-weight: 700; line-height: 100%; color: black;">DUMMY</p>
-        <div style="height: 186.50px;"/>
-        <p style="font-size: 300px; font-weight: 900; line-height: 100%; color: black;">dummy</p>
-        <div style="height: 186.50px;"/>
-        <p style="font-size: 300px; font-weight: 900; line-height: 100%; color: black;">dummy</p>
-    </div>
-    <img style="width: 343px; height: 547px; left: 680px; top: 2416px; position: absolute; border-radius: 75px;" src="https://via.placeholder.com/343x547"/>
-    <img style="width: 387.50px; height: 620px; left: 189.38px; top: 2343px; position: absolute; border-radius: 8px;" src="https://via.placeholder.com/387.5x620"/>
-    <div style="width: 558px; height: 558px; left: 42px; top: 478px; position: absolute; box-shadow: 10px -50px 25px rgba(0, 0, 0, 0.50) inset; border-radius: 9999px;"/>
-</div>
+Container(
+    width: 1200,
+    height: 3270,
+    gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [Color(0xffff4646), Color(0xff46ffd2)], ),
+    child: Stack(
+        children:[
+            Positioned.fill(
+                child: Align(
+                    alignment: Alignment.topLeft,
+                    child: Container(
+                        width: 1060,
+                        height: 369,
+                        color: Color(0xffc4c4c4),
+                        padding: const EdgeInsets.only(left: 217, right: 76, ),
+                        child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children:[
+                                Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children:[
+                                        Text(
+                                            "Home",
+                                            style: TextStyle(
+                                                color: Colors.black,
+                                                fontSize: 48,
+                                                fontFamily: "SF Pro Display",
+                                                fontWeight: FontWeight.w700,
+                                            ),
+                                        ),
+                                        SizedBox(width: 70),
+                                        Text(
+                                            "Features",
+                                            style: TextStyle(
+                                                color: Colors.black,
+                                                fontSize: 48,
+                                                fontFamily: "SF Pro Display",
+                                                fontWeight: FontWeight.w700,
+                                            ),
+                                        ),
+                                        SizedBox(width: 70),
+                                        Text(
+                                            "Blog",
+                                            style: TextStyle(
+                                                color: Colors.black,
+                                                fontSize: 48,
+                                                fontFamily: "SF Pro Display",
+                                                fontWeight: FontWeight.w700,
+                                            ),
+                                        ),
+                                        SizedBox(width: 70),
+                                        Text(
+                                            "About",
+                                            style: TextStyle(
+                                                color: Colors.black,
+                                                fontSize: 48,
+                                                fontFamily: "SF Pro Display",
+                                                fontWeight: FontWeight.w700,
+                                            ),
+                                        ),
+                                    ],
+                                ),
+                            ],
+                        ),
+                    ),
+                ),
+            ),
+            Positioned(
+                left: 0,
+                top: 819,
+                child: Container(
+                    width: 1262,
+                    height: 1386,
+                    child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children:[
+                            Text(
+                                "DUMMY",
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 150,
+                                    fontFamily: "Harmonia Sans Pro Cyr",
+                                    fontWeight: FontWeight.w700,
+                                ),
+                            ),
+                            SizedBox(height: 186.50),
+                            Text(
+                                "dummy",
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 300,
+                                    fontFamily: "Poppins",
+                                    fontWeight: FontWeight.w900,
+                                ),
+                            ),
+                            SizedBox(height: 186.50),
+                            Text(
+                                "dummy",
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 300,
+                                    fontFamily: "MADE TOMMY",
+                                    fontWeight: FontWeight.w900,
+                                ),
+                            ),
+                        ],
+                    ),
+                ),
+            ),
+            Positioned(
+                left: 680,
+                top: 2416,
+                child: Container(
+                    width: 343,
+                    height: 547,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(75),
+                    ),
+                    child: FlutterLogo(size: 343),
+                ),
+            ),
+            Positioned(
+                left: 189.38,
+                top: 2343,
+                child: Container(
+                    width: 387.50,
+                    height: 620,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: FlutterLogo(size: 387.5),
+                ),
+            ),
+            Positioned(
+                left: 42,
+                top: 478,
+                child: Container(
+                    width: 558,
+                    height: 558,
+                    decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                    ),
+                ),
+            ),
+        ],
+    ),
+)
