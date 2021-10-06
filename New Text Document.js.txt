@@ -1,0 +1,147 @@
+Container(
+    width: 1920,
+    height: 3270,
+    gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [Color(0xffff4646), Color(0xff46ffd2)], ),
+    child: Stack(
+        children:[
+            Positioned.fill(
+                child: Align(
+                    alignment: Alignment.topLeft,
+                    child: Container(
+                        width: 1920,
+                        height: 369,
+                        color: Color(0xffc4c4c4),
+                        padding: const EdgeInsets.only(left: 1076, right: 77, top: 185, bottom: 127, ),
+                        child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children:[
+                                Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children:[
+                                        Text(
+                                            "Home",
+                                            style: TextStyle(
+                                                color: Colors.black,
+                                                fontSize: 48,
+                                                fontFamily: "SF Pro Display",
+                                                fontWeight: FontWeight.w700,
+                                            ),
+                                        ),
+                                        SizedBox(width: 70),
+                                        Text(
+                                            "Features",
+                                            style: TextStyle(
+                                                color: Colors.black,
+                                                fontSize: 48,
+                                                fontFamily: "SF Pro Display",
+                                                fontWeight: FontWeight.w700,
+                                            ),
+                                        ),
+                                        SizedBox(width: 70),
+                                        Text(
+                                            "Blog",
+                                            style: TextStyle(
+                                                color: Colors.black,
+                                                fontSize: 48,
+                                                fontFamily: "SF Pro Display",
+                                                fontWeight: FontWeight.w700,
+                                            ),
+                                        ),
+                                        SizedBox(width: 70),
+                                        Text(
+                                            "About",
+                                            style: TextStyle(
+                                                color: Colors.black,
+                                                fontSize: 48,
+                                                fontFamily: "SF Pro Display",
+                                                fontWeight: FontWeight.w700,
+                                            ),
+                                        ),
+                                    ],
+                                ),
+                            ],
+                        ),
+                    ),
+                ),
+            ),
+            Positioned(
+                left: 630,
+                top: 856,
+                child: Text(
+                    "DUMMY",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 150,
+                        fontFamily: "Harmonia Sans Pro Cyr",
+                        fontWeight: FontWeight.w700,
+                    ),
+                ),
+            ),
+            Positioned(
+                left: 265,
+                top: 1185,
+                child: Text(
+                    "dummy",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 300,
+                        fontFamily: "Poppins",
+                        fontWeight: FontWeight.w900,
+                    ),
+                ),
+            ),
+            Positioned(
+                left: 303,
+                top: 1859,
+                child: Text(
+                    "dummy",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 300,
+                        fontFamily: "MADE TOMMY",
+                        fontWeight: FontWeight.w900,
+                    ),
+                ),
+            ),
+            Positioned(
+                left: 1417,
+                top: 2343,
+                child: Container(
+                    width: 343,
+                    height: 547,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(75),
+                    ),
+                    child: FlutterLogo(size: 343),
+                ),
+            ),
+            Positioned(
+                left: 303,
+                top: 2343,
+                child: Container(
+                    width: 620,
+                    height: 620,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: FlutterLogo(size: 620),
+                ),
+            ),
+            Positioned(
+                left: 1277,
+                top: 577,
+                child: Container(
+                    width: 558,
+                    height: 558,
+                    decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                    ),
+                ),
+            ),
+        ],
+    ),
+)
